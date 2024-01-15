@@ -7,7 +7,11 @@ exports.homePage = async(req, res) => {
         title: "Node Application",
         description: "Free NodeJS Notes App"
     };
-    res.render("index", locals);
+    res.render("index", 
+    {
+        locals,
+        layout: "../views/layouts/font-page"
+    });
 };
 
 /**
